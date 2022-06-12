@@ -1,0 +1,22 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "TestAutomation",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GouthamKumarPagadala/cypress-testautomation.git"
+  },
+  "author": "gouthamkumarp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GouthamKumarPagadala/cypress-testautomation/issues"
+  },
+  "homepage": "https://github.com/GouthamKumarPagadala/cypress-testautomation#readme",
+  "dependencies": {
+    "cypress": "^9.5.0"
+  }
+}
