@@ -12,7 +12,7 @@ steps:
   displayName: 'npm install -g'
   inputs:
     verbose: false
-    
+
 - task: CmdLine@2
   inputs:
     script: |
@@ -24,13 +24,7 @@ steps:
       
       npm --version
 
-- task: PowerShell@2
-  displayName: 'Execute Cypress'
-  inputs:
-    targetType: filePath
-    filePath: 'npm --version'
-    errorActionPreference: continue
-  continueOnError: true
+      node ./node_modules/cypress/bin/cypress run
 
 - task: PublishTestResults@2
   displayName: 'Publish Test Results **/TEST-*.xml'
