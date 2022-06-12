@@ -15,12 +15,16 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: |      
+    script: |
+      echo Write your commands here
+      
+      echo Hello world
+      
       node --version
-
+      
       npm --version
 
-      node .\node_modules\cypress\bin\cypress run
+      node ./node_modules/cypress/bin/cypress run
 
 - task: PublishTestResults@2
-  displayName: 'Publish Test Results **/my-test-*.xml'
+  displayName: 'Publish Test Results **/TEST-*.xml'

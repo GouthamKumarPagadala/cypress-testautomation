@@ -1,6 +1,6 @@
 {
     "reporter": "junit",
     "reporterOptions": {
-        "mochaFile": "results/my-test-output-[hash].xml"
+        "mochaFile": "results/TEST-output-[hash].xml"
     }
 }
