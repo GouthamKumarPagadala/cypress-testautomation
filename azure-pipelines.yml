@@ -12,12 +12,23 @@ steps:
   displayName: 'npm install -g'
   inputs:
     verbose: false
+    
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo Write your commands here
+      
+      echo Hello world
+      
+      node --version
+      
+      npm --version
 
 - task: PowerShell@2
   displayName: 'Execute Cypress'
   inputs:
     targetType: filePath
-    filePath: 'node --version'
+    filePath: 'npm --version'
     errorActionPreference: continue
   continueOnError: true
 
