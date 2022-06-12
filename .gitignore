@@ -1,3 +1,5 @@
 # ignore all nodemodules
 node_modules
 package-lock.json
+cypress/videos
+
