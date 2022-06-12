@@ -8,11 +8,11 @@ steps:
   inputs:
     verbose: false
 
-- task: PowerShell@2
+- task: ExecuteCypress
   displayName: 'PowerShell Script'
   inputs:
     targetType: filePath
-    filePath: './node ./node_modules/cypress/bin/cypress run'
+    filePath: './node_modules/cypress/bin/cypress run'
     errorActionPreference: continue
   continueOnError: true
 
