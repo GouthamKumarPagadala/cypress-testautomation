@@ -17,7 +17,7 @@ steps:
   displayName: 'Execute Cypress'
   inputs:
     targetType: filePath
-    filePath: 'cypress run'
+    filePath: './node_modules/cypress/bin/cypress run'
     errorActionPreference: continue
   continueOnError: true
 
