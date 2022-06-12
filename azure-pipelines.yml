@@ -8,7 +8,7 @@ steps:
   inputs:
     verbose: false
 
-- task: ExecuteCypress
+- task: PowerShell@2
   displayName: 'PowerShell Script'
   inputs:
     targetType: filePath
