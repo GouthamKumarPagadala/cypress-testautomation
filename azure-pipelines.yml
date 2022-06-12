@@ -9,10 +9,10 @@ steps:
     verbose: false
 
 - task: PowerShell@2
-  displayName: 'PowerShell Script'
+  displayName: 'Execute Cypress'
   inputs:
     targetType: filePath
-    filePath: './node_modules/cypress/bin/cypress run'
+    filePath: 'npm ./node_modules/cypress/bin/cypress run'
     errorActionPreference: continue
   continueOnError: true
 
