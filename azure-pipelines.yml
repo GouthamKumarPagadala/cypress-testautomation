@@ -9,7 +9,7 @@ steps:
     checkLatest: true
 
 - task: Npm@1
-  displayName: 'npm install'
+  displayName: 'npm install -g'
   inputs:
     verbose: false
 
@@ -17,7 +17,7 @@ steps:
   displayName: 'Execute Cypress'
   inputs:
     targetType: filePath
-    filePath: './node_modules/cypress/bin/cypress run'
+    filePath: 'node --version'
     errorActionPreference: continue
   continueOnError: true
 
